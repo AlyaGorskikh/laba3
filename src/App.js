@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+    import React from 'react';
+    import MyButton from './components/Button';
+    import MyContainer from './components/Container';
+    import Footer from './components/Footer'; // Импортируем Footer
+    import './styles.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    const App = () => {
+    const handleClick = () => {
+        alert('Кнопка нажата!');
+    };
 
-export default App;
+    return (
+        <MyContainer>
+        <h1 className="my-title">Лабораторная работа № 2</h1>
+        <MyButton label="Кнопка" onClick={handleClick} />
+        </MyContainer>
+    );
+    };
+
+    export default App;

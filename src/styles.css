@@ -1,0 +1,18 @@
+/* styles.css */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Занять всю высоту окна */
+    margin: 0; /* нет отступов */
+    background-color: #d1e2d2; /* Цвет фона страницы */
+}
+
+.my-title {
+    color: #312113;
+    font-family: 'Arial', sans-serif; /* Задайте нужный шрифт */
+    font-size: 22px; /* размер шрифта */
+    text-align: center; /* выравнивание текста по центру */
+    margin: 2; /* отступ*/
+}
+

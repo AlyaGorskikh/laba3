@@ -1,0 +1,13 @@
+.my-button {
+    font-size: 17px; /* размер шрифта */
+    padding: 10px 20px;
+    background-color: #608845;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.my-button:hover {
+    background-color: #456d2a;
+}
