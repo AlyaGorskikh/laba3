@@ -1,0 +1,25 @@
+/* Header.css */
+.header {
+    display: flex;
+    align-items: center; /* Центрируем содержимое по вертикали */
+    padding: 20px;
+    background-color: #e6e6e6; /* Цвет фона заголовка */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для заголовка */
+    position: relative; /* Позволяет позиционировать дочерние элементы */
+    z-index: 10; /* Значение выше, чем у Content */
+}
+
+.header__title {
+    font-family: 'Roboto', sans-serif; /* Используем Roboto */
+    color: rgb(59, 55, 48);
+    font-size: 35px; /* Размер шрифта заголовка */
+    margin: 0; /* Убираем отступы */
+    flex-grow: 1; /* Позволяет заголовку занимать оставшееся пространство */
+    text-align: center; /* Центрируем текст внутри заголовка */
+}
+
+.menu__container {
+    position: absolute; /* Позиционируем меню абсолютно */
+    top: 20px; /* Отступ сверху */
+    left: 20px; /* Отступ слева */
+}

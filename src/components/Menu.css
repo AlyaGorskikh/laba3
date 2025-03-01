@@ -1,0 +1,56 @@
+/* Menu.css */
+.menu__container {
+    position: relative; /* Устанавливаем относительное позиционирование для контейнера */
+}
+
+.menu__button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu__icon {
+    width: 30px;
+    height: 4px;
+    background-color: #333; /* Цвет черт */
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
+
+.menu {
+    display: none; /* Скрываем меню по умолчанию */
+    background-color: #e6e6e6; /* Цвет фона меню */
+    position: absolute; /* Позиционируем меню */
+    top: 0; /* Расположение под кнопкой */
+    left: 60px; /* Увеличиваем отступ от кнопки (измените 40px на 60px или больше) */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.menu-open {
+    display: block; /* Показываем меню при открытии */
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    padding: 10px 30px;
+    text-align: center; /* Центрируем текст в каждом элементе списка */
+}
+
+.menu li a {
+    font-family: 'Roboto', sans-serif; /* Используем Roboto */
+    text-decoration: none;
+    color: #333; /* Цвет текста */
+    font-size: 19px; /* Увеличиваем размер шрифта */
+}
+
+.menu li a:hover {
+    background-color: #cacaca; /* Цвет при наведении */
+}

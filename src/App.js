@@ -1,20 +1,20 @@
-    import React from 'react';
-    import MyButton from './components/Button';
-    import MyContainer from './components/Container';
-    import Footer from './components/Footer'; // Импортируем Footer
-    import './styles.css';
+// App.js
+import React from 'react';
+import Header from './components/Header'; // Импортируем компонент Header
+import Content from './components/Content'; // Импортируем компонент Content
+import Footer from './components/Footer'; // Импортируем компонент Footer
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import './styles.css';
 
-    const App = () => {
-    const handleClick = () => {
-        alert('Кнопка нажата!');
-    };
-
+const App = () => {
     return (
-        <MyContainer>
-        <h1 className="my-title">Лабораторная работа № 2</h1>
-        <MyButton label="Кнопка" onClick={handleClick} />
-        </MyContainer>
+        <div className="app-container">
+            <Header /> {/* Добавляем Header */}
+            <Content />
+            <Footer /> {/* Добавляем Footer вне MyContainer */}
+        </div>
     );
-    };
+};
 
-    export default App;
+export default App;

@@ -1,11 +1,15 @@
-import React from 'react';
+    import React from 'react';
+    import './Footer.css'; // Импортируем стили для Footer
 
-const Footer = () => {
+    function Footer() {
     return (
-        <footer>
-            <p>&copy; 2025 Лабораторные работы. Все права защищены.</p>
+        <footer className="footer">
+        <div className="footer-content">
+            <p>&copy; 2025 Лабораторные работы защищены.</p>
+            
+        </div>
         </footer>
     );
-};
+    }
 
-export default Footer;
+    export default Footer;
